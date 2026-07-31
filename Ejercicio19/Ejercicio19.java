@@ -1,8 +1,8 @@
-package Ejercicio06;
+package Ejercicio19;
 
 import java.util.Scanner;
 
-public class Ejercicio06 {
+public class Ejercicio19 {
 
     public static void main(String[] args) {
 
@@ -10,11 +10,11 @@ public class Ejercicio06 {
 
         try {
 
-            System.out.print("Ingrese un número positivo: ");
+            System.out.print("Ingrese un número mayor a 100: ");
             int numero = scanner.nextInt();
 
-            if (numero < 0) {
-                throw new IllegalArgumentException("El número no puede ser negativo.");
+            if (numero <= 100) {
+                throw new IllegalArgumentException("El número debe ser mayor a 100.");
             }
 
             System.out.println("Número válido: " + numero);
@@ -23,11 +23,12 @@ public class Ejercicio06 {
 
             System.out.println(e.getMessage());
 
-        } finally{
+        } finally {
+
             scanner.close();
+
         }
-    
-    
+
     }
 
 }

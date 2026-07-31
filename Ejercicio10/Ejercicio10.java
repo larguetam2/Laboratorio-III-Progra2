@@ -21,8 +21,10 @@ public class Ejercicio10 {
 
             System.out.println(e.getMessage());
 
+        } finally {
+            scanner.close();
         }
 
-        scanner.close();
+        
     }
 }
