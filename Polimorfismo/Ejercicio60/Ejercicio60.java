@@ -1,4 +1,4 @@
-package Ejercicio60;
+package Polimorfismo.Ejercicio60;
 
 public class Ejercicio60 {
 
